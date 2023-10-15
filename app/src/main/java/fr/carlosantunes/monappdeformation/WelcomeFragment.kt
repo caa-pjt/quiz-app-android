@@ -1,6 +1,9 @@
 package fr.carlosantunes.monappdeformation
 
 import android.os.Bundle
+import android.text.Editable
+import android.text.TextWatcher
+import android.util.Log
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
@@ -48,7 +51,60 @@ class WelcomeFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-        binding.playButton.setEnabled(false)
+        // binding.playButton.setEnabled(true)
+        binding.playButton.isEnabled = false
+
+        // Appel de la méthode lorsque l'utilisateur écrit dans usernameEditText
+        this.textChange()
+
+        // Détecter le click sur le boutton L'et's play pour démarrer le quiz
+        binding.playButton.setOnClickListener {
+            // Navigation vers le fragment quiz
+            Log.i(MYAPP, "Click !")
+        }
+    }
+
+    // Détecte les changement d'état du usernameEditText
+    private fun textChange() {
+        /*
+            À chaque fois que l'utilisateur saisira une lettre, la méthode afterTextChanged  sera appelée
+            Si au moins une lettre a été saisie, alors le bouton doit être actif, sinon il est inactif :
+                - Pour activer ou désactiver un bouton, methode (isEnabled)
+                - Le texte entré par l'utilisateur est représenté par la variable (s)
+                - Pour la convertir en chaîne de caractères methode (toString)
+                - Savoir si la chaîne est vide mthode (isEmpty)
+        */
+        binding.usernameEditText.addTextChangedListener(object : TextWatcher {
+            override fun beforeTextChanged(s: CharSequence?, start: Int, count: Int, after: Int) {
+                // Ajoutez code ici si nécessaire
+            }
+
+            override fun onTextChanged(s: CharSequence?, start: Int, before: Int, count: Int) {
+                // Ajoutez code ici si nécessaire
+            }
+
+            override fun afterTextChanged(s: Editable?) {
+                /*  Le texte entré par l'utilisateur est représenté par la variable (s)
+                    - Il faut convertir en chaîne de caractères methode (toString)
+                    - Pour savoir si la chaîne est vide methode (isEmpty)
+                    - Modifier l'état du boutton l'orsque le champs texte n'est pas vide
+                */
+                var text = s.toString()
+                var isTextEmpty = text.isEmpty()
+
+                binding.playButton.isEnabled = !isTextEmpty
+
+
+                Log.i(MYAPP, "text writed is : ($text) count characters is (${text.length}) ")
+            }
+        })
+    }
+
+    override fun onStart() {
+        super.onStart()
+
+        // binding.playButton.setEnabled(false)
+        binding.playButton.isEnabled = false
     }
 
     companion object {
