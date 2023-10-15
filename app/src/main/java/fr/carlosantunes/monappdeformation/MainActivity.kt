@@ -3,13 +3,20 @@ package fr.carlosantunes.monappdeformation
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
+import android.view.View
+import fr.carlosantunes.monappdeformation.databinding.ActivityMainBinding
 
 const val MYAPP = "CAA_APP"
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_main)
+        // OLD -> setContentView(R.layout.activity_main)
+
+        // NEW binding de l'activité de l'app
+        val binding = ActivityMainBinding.inflate(layoutInflater)
+        val view : View = binding.root
+        setContentView(view)
 
         Log.i(MYAPP, "onCreate")
     }

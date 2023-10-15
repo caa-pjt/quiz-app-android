@@ -23,7 +23,7 @@
         android:textStyle="bold" />
 
     <TextView
-        android:id="@+id/header"
+        android:id="@+id/welcome_fragment_sub_title"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:gravity="center_horizontal"
@@ -34,7 +34,7 @@
         />
 
     <EditText
-        android:id="@+id/editTextText"
+        android:id="@+id/usernameEditText"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:ems="10"
@@ -44,6 +44,7 @@
         android:minHeight="48dp" />
 
     <Button
+        android:id="@+id/playButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:background="@color/design_default_color_primary_variant"
@@ -52,5 +53,6 @@
         android:textSize="20sp"
         android:layout_margin="30dp"
         android:text="@string/welcome_fragment_button" />
+
 
 </LinearLayout>
