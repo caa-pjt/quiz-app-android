@@ -7,5 +7,9 @@
     <string name="welcome_fragment_button">Let\'s play</string>
     <string name="welcome_fragment_edit_text_placeholder">Please type your name here</string>
     <string name="app_title">SuperQuiz</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Question ?</string>
+    <string name="good_answer">💪 Good Answer !</string>
+    <string name="quiz_fragment_next">Next</string>
 
 </resources>
