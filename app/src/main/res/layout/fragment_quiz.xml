@@ -81,7 +81,7 @@
             android:layout_weight="2"
             android:gravity="bottom"
             android:paddingBottom="10dp"
-            android:text="@string/good_answer"
+            tools:text="@string/good_answer"
             android:textColor="@color/black"
             android:textSize="18sp"
             android:visibility="invisible"

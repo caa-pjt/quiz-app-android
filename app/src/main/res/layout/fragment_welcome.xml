@@ -40,9 +40,10 @@
         android:layout_marginHorizontal="16dp"
         android:ems="10"
         android:hint="@string/welcome_fragment_edit_text_placeholder"
-        android:inputType="text"
+        android:inputType="textPersonName"
         android:minHeight="48dp"
-        android:paddingLeft="10dp" />
+        android:importantForAccessibility="yes"
+        android:autofillHints="username"/>
 
     <Button
         android:id="@+id/playButton"

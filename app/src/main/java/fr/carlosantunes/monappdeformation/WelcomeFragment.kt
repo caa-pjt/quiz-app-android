@@ -8,6 +8,8 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.fragment.app.FragmentManager
+import androidx.fragment.app.FragmentTransaction
 import fr.carlosantunes.monappdeformation.databinding.FragmentWelcomeBinding
 
 // TODO: Rename parameter arguments, choose names that match
@@ -61,6 +63,16 @@ class WelcomeFragment : Fragment() {
         binding.playButton.setOnClickListener {
             // Navigation vers le fragment quiz
             Log.i(MYAPP, "Click !")
+
+            val fragmentManager = requireActivity().supportFragmentManager
+            val fragmentTransaction = fragmentManager.beginTransaction()
+            // Passer les paramètres appropriés ici ex : param1 param2 etc...
+            val quizFragment = QuizFragment.newInstance()
+            // Utilisez "replace" au lieu de "add" // container = layout id -> activity_main.xml
+            fragmentTransaction.add(R.id.container, quizFragment)
+            // Facultatif : ajoutez au back stack si vous souhaitez prendre en charge le retour en arrière
+            // fragmentTransaction.addToBackStack(null)
+            fragmentTransaction.commit()
         }
     }
 
