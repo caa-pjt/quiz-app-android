@@ -1,6 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+
+    <color name="colorPrimary">#6200EE</color>
+    <color name="colorPrimaryVariant">#3700B3</color>
+
+    <!-- Bandeau du haut du téléphone et soulignement des inputs textes -->
+    <color name="colorSecondary">#3700B3</color><!-- #03DAC6 -->
+    <color name="colorSecondaryVariant">#018786</color>
+
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
-    <color name="primary">#673AB7</color>
+
+    <color name="gray">#C6C6C6</color>
+    <color name="darkGray">#666666</color>
+
 </resources>
