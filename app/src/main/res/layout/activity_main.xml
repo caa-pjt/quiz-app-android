@@ -5,34 +5,17 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-
     tools:context=".MainActivity">
 
-    <!-- Header -->
-    <TextView
-        android:id="@+id/headerApp"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:background="@color/design_default_color_primary_variant"
-        android:padding="20dp"
-        android:text="@string/app_title"
-        android:textColor="@color/white"
-        android:textSize="20sp"
-        android:textStyle="bold"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        tools:ignore="MissingConstraints" />
 
     <!-- Inclusion du fragment_welcome.xml -->
     <androidx.fragment.app.FragmentContainerView
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_marginTop="65dp"
-        app:layout_constraintTop_toTopOf="parent"
-        tools:layout_editor_absoluteX="0dp"
-        android:name="fr.carlosantunes.monappdeformation.WelcomeFragment"
         android:id="@+id/fragment_container_view_tag"
-        tools:layout="@layout/fragment_welcome" />
+        android:name="fr.carlosantunes.monappdeformation.WelcomeFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout="@layout/fragment_welcome"
+        tools:layout_editor_absoluteX="0dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
