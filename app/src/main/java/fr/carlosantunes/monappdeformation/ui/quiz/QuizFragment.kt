@@ -1,10 +1,11 @@
-package fr.carlosantunes.monappdeformation
+package fr.carlosantunes.monappdeformation.ui.quiz
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import fr.carlosantunes.monappdeformation.R
 
 // TODO: Rename parameter arguments, choose names that match
 // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
@@ -51,12 +52,12 @@ class QuizFragment : Fragment() {
         @JvmStatic
         fun newInstance() = /* param1: String, param2: String */
             QuizFragment()
-               /* .apply {
-                arguments = Bundle().apply {
-                    putString(ARG_PARAM1, param1)
-                    putString(ARG_PARAM2, param2)
-                }
-            }*/
+        /* .apply {
+         arguments = Bundle().apply {
+             putString(ARG_PARAM1, param1)
+             putString(ARG_PARAM2, param2)
+         }
+     }*/
     }
 
 

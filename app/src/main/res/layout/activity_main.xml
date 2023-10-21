@@ -12,7 +12,7 @@
     <!-- Inclusion du fragment_welcome.xml -->
     <androidx.fragment.app.FragmentContainerView
         android:id="@+id/fragment_container_view_tag"
-        android:name="fr.carlosantunes.monappdeformation.WelcomeFragment"
+        android:name="fr.carlosantunes.monappdeformation.ui.welcome.WelcomeFragment"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         app:layout_constraintTop_toTopOf="parent"

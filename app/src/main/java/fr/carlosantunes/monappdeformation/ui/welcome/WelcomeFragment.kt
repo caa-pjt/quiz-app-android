@@ -1,4 +1,4 @@
-package fr.carlosantunes.monappdeformation
+package fr.carlosantunes.monappdeformation.ui.welcome
 
 import android.os.Bundle
 import android.text.Editable
@@ -10,7 +10,10 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.FragmentManager
 import androidx.fragment.app.FragmentTransaction
+import fr.carlosantunes.monappdeformation.MYAPP
+import fr.carlosantunes.monappdeformation.R
 import fr.carlosantunes.monappdeformation.databinding.FragmentWelcomeBinding
+import fr.carlosantunes.monappdeformation.ui.quiz.QuizFragment
 
 // TODO: Rename parameter arguments, choose names that match
 // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER

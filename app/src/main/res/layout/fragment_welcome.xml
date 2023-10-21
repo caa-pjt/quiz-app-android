@@ -6,7 +6,7 @@
     android:gravity="center_horizontal"
     android:orientation="vertical"
     android:padding="16dp"
-    tools:context=".WelcomeFragment">
+    tools:context=".ui.welcome.WelcomeFragment">
 
     <!-- TODO: Update blank fragment layout -->
 
