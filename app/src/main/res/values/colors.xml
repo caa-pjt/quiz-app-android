@@ -10,6 +10,8 @@
 
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+    <color name="green">#018786</color>
+    <color name="red">#9E0A16</color>
 
     <color name="gray">#C6C6C6</color>
     <color name="darkGray">#666666</color>

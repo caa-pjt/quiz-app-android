@@ -8,6 +8,7 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.Toast
 import androidx.fragment.app.FragmentManager
 import androidx.fragment.app.FragmentTransaction
 import fr.carlosantunes.monappdeformation.MYAPP
@@ -21,6 +22,10 @@ private const val ARG_PARAM1 = "param1"
 private const val ARG_PARAM2 = "param2"
 
 /**
+ * Fragment d'accueil de l'application qui permet à l'utilisateur de démarrer le quiz.
+ * Ce fragment est responsable de la gestion de l'interface utilisateur et de la navigation vers
+ * le fragment du quiz.
+ *
  * A simple [Fragment] subclass.
  * Use the [WelcomeFragment.newInstance] factory method to
  * create an instance of this fragment.
@@ -44,10 +49,8 @@ class WelcomeFragment : Fragment() {
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        // Inflate the layout for this fragment
-        // return inflater.inflate(R.layout.fragment_welcome, container, false)
 
-        // Initialisation de lu fragment grace FragmentWelcomeBinding
+        // Initialisation de vue fragment grace FragmentWelcomeBinding
         binding = FragmentWelcomeBinding.inflate(inflater, container, false)
         return binding.root
     }
@@ -58,6 +61,10 @@ class WelcomeFragment : Fragment() {
 
         // binding.playButton.setEnabled(true)
         binding.playButton.isEnabled = false
+
+        val usernameText = binding.usernameEditText
+
+        Log.i(MYAPP, "User name : $usernameText")
 
         // Appel de la méthode lorsque l'utilisateur écrit dans usernameEditText
         this.textChange()

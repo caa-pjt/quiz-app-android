@@ -19,7 +19,7 @@
         android:layout_weight="1"
         android:background="@color/darkGray"
         android:gravity="center"
-        android:paddingVertical="50dp"
+        android:paddingVertical="40dp"
         android:text="@string/hello_blank_fragment"
         android:textColor="@color/white"
         android:textSize="30sp"
@@ -30,41 +30,41 @@
         android:id="@+id/answer1"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginVertical="10dp"
-        android:background="@color/design_default_color_primary_variant"
+        android:layout_marginVertical="5dp"
         android:gravity="center"
         android:paddingVertical="15dp"
-        android:text="Answer A" />
+        android:text="Answer A"
+        android:textColor="@color/white" />
 
     <Button
         android:id="@+id/answer2"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginVertical="10dp"
-        android:background="@color/design_default_color_primary_variant"
+        android:layout_marginVertical="5dp"
         android:gravity="center"
         android:paddingVertical="15dp"
-        android:text="Answer B" />
+        android:text="Answer B"
+        android:textColor="@color/white" />
 
     <Button
         android:id="@+id/answer3"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginVertical="10dp"
-        android:background="@color/design_default_color_primary_variant"
+        android:layout_marginVertical="5dp"
         android:gravity="center"
         android:paddingVertical="15dp"
-        android:text="Answer C" />
+        android:text="Answer C"
+        android:textColor="@color/white" />
 
     <Button
         android:id="@+id/answer4"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginVertical="10dp"
-        android:background="@color/design_default_color_primary_variant"
+        android:layout_marginVertical="5dp"
         android:gravity="center"
         android:paddingVertical="15dp"
-        android:text="Answer D" />
+        android:text="Answer D"
+        android:textColor="@color/white" />
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -81,10 +81,10 @@
             android:layout_weight="2"
             android:gravity="bottom"
             android:paddingBottom="10dp"
-            tools:text="@string/good_answer"
             android:textColor="@color/black"
             android:textSize="18sp"
             android:visibility="invisible"
+            tools:text="@string/good_answer"
             tools:visibility="visible" />
 
 
@@ -92,10 +92,10 @@
             android:id="@+id/next"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_margin="8dp"
+            android:layout_marginLeft="8dp"
             android:backgroundTint="@color/darkGray"
             android:paddingHorizontal="40dp"
-            android:paddingVertical="12dp"
+            android:paddingVertical="20dp"
             android:text="@string/quiz_fragment_next"
             android:textSize="18sp"
             android:visibility="invisible"
